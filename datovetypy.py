@@ -1,12 +1,13 @@
+cars = ["Ford", "Volvo", "BMW", "AUDI"]
 
-arrays = ["Ford", "Porsche", "Audi", "BMW", "Mercedes", "Škoda"]
+print (cars)
 
+for x in range(len(cars)):
+    print(f"Auto {x+1}: {cars[x]}")
 
-for x in range(1):
-    print ("1 " + arrays[0])
-    print ("2 " + arrays[1])
-    print ("3 " + arrays[2])
-    print ("4 " + arrays[3])
-    print ("5 " + arrays[4])
-    print ("6 " + arrays[5])
+carplus = input("Zadejte auto: ")
 
+cars.append(carplus)
+
+for x in range(len(cars)):
+    print(f"Auto {x+1}: {cars[x]}")
