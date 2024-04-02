@@ -17,7 +17,7 @@ print ("Pro vyber zbozi podle nazvu zmackni 2")
 Vyber = int(input("Vas vyber: "))
 
 if Vyber == 1:
-    for y in range(100):
+    for y in range(9):
 
         kosikplus = int(input("Zadejte cislo zbozi: "))
 
@@ -28,7 +28,7 @@ if Vyber == 1:
         vypis_zbozi(zbozi)
 
 elif Vyber == 2:
-    for y in range(100):
+    for y in range(9):
 
         kosikplus = str(input("Zadejte nazev zbozi: "))
 
