@@ -40,3 +40,17 @@ elif Vyber == 2:
 
 
 
+word_random = []
+
+for x in range(lenght_str):
+   word_random.append(random.choices(string.ascii_uppercase))
+
+print (word_random)
+
+for y in range(len(word_random)):
+    print (f"{word_random[y+1]}")
+
+
+for y in range(lenght_str):
+    word_random_promena = (random.choices(string.ascii_uppercase))
+    word_random.append(word_random_promena)

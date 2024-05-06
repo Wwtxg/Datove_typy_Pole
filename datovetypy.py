@@ -1,23 +1,22 @@
-cars = ["Ford", "Volvo", "BMW", "AUDI"]
+import random
 
-print (cars)
+import string
 
-def vypis_pole(prvek):
-    for x in range(len(prvek)):
-        print(f"Auto {x+1}: {cars[x]}")
+lenght_int = random.randint(1,10)
 
-carplus = input("Zadejte auto: ")
+lenght_str = random.randint(1,10)
 
-cars.append(carplus)
-vypis_pole(cars)
+pole_random = []
+for x in range(lenght_int):
+    pole_random.append(random.randint(1,100))
 
-print ("   ")
+print (pole_random)
 
-carminusstr = str(input("Co odebrat str "))
-cars.remove(carminusstr)
-vypis_pole(cars)
+word_random = []
 
-carminus = int(input("Co odebrat "))
-cars.pop(carminus)
-vypis_pole(cars)
+word_random_promena = (random.choices(string.ascii_uppercase, k = lenght_str))
+
+word_random.append(word_random_promena)
+
+print(' '.join(map(str,word_random)))
 
